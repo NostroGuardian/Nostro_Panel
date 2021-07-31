@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     EditText etLogin, etPassword;
     Button btnLogin;
+    TextView btnReg;
 
-    final String urlLogin = "https://nstrdv.ml/api.php";
+    final String urlLogin = "https://nstrdv.ml/api/auth.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         etLogin = (EditText) findViewById(R.id.editTextTextPersonName);
         etPassword = (EditText) findViewById(R.id.editTextTextPassword);
         btnLogin = (Button) findViewById(R.id.authButton);
+        btnReg = (TextView) findViewById(R.id.regTextView);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
                 String password = etPassword.getText().toString();
 
                 new LoginUser().execute(login, password);
+            }
+        });
+
+        btnReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), registration.class);
+                startActivity(intent);
             }
         });
     }

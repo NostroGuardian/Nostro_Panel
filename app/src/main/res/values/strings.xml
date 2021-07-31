@@ -2,7 +2,10 @@
     <string name="app_name">Nostro Panel</string>
     <string name="authHeader">Авторизация</string>
     <string name="authDescription">Пожалуйста, войдите в систему Nostro Panel.</string>
+    <string name="regHeader">Регистрация</string>
+    <string name="regDescription">Пожалуйста, зарегистрируйтесь в системе Nostro Panel.</string>
     <string name="authLogin">Логин</string>
     <string name="authPass">Пароль</string>
     <string name="authButton">Войти</string>
+    <string name="regButton">Зарегистрироваться</string>
 </resources>

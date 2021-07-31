@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
-    tools:context=".MainActivity">
+    tools:context=".registration">
 
     <TextView
-        android:id="@+id/authHeader"
+        android:id="@+id/regHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:fontFamily="@font/montserrat"
-        android:text="@string/authHeader"
+        android:text="@string/regHeader"
         android:textColor="@color/textColor"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,20 +21,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/authDescription"
+        android:id="@+id/regDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/authDescription"
+        android:text="@string/regDescription"
         android:textColor="@color/textColor"
-        android:textSize="16sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/authHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/regHeader" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/regEditTextTextPersonName"
         android:layout_width="270dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
@@ -45,10 +45,10 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/regLoginLabel" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/regEditTextTextPassword"
         android:layout_width="270dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
@@ -59,10 +59,10 @@
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passField" />
+        app:layout_constraintTop_toBottomOf="@+id/regPassField" />
 
     <TextView
-        android:id="@+id/loginLabel"
+        android:id="@+id/regLoginLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -71,10 +71,10 @@
         android:textColor="@color/subTextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/authDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/regDescription" />
 
     <TextView
-        android:id="@+id/passField"
+        android:id="@+id/regPassField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -83,30 +83,20 @@
         android:textColor="@color/subTextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/regEditTextTextPersonName" />
 
     <Button
         android:id="@+id/authButton"
-        android:layout_width="150dp"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/authButton"
+        android:text="@string/regButton"
         android:textColor="@color/itemsBackgroundColor"
+        android:textSize="12sp"
         app:backgroundTint="@color/secondColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-    <TextView
-        android:id="@+id/regTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/regButton"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/authButton" />
+        app:layout_constraintTop_toBottomOf="@+id/regEditTextTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
