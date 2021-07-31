@@ -5,5 +5,10 @@
   > If you want help me, you can to edit, I will be grateful :)
 
   - [X] Design developing
-  - [ ] Connection with API
+  - [X] Login activity
+  - [X] Login API
+  - [X] Connection with API
+  - [ ] Registration activity
+  - [ ] Registration API
   - [ ] Dashboard activity
+  - [ ] Dashboard API
