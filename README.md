@@ -5,6 +5,8 @@
   > If you want help me, you can to edit, I will be grateful :)
 
   - [X] Design developing
+  - [X] Login activity
+  - [X] Login API
   - [X] Connection with API
   - [ ] Registration activity
   - [ ] Registration API
