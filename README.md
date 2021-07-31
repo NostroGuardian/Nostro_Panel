@@ -6,4 +6,7 @@
 
   - [X] Design developing
   - [X] Connection with API
+  - [ ] Registration activity
+  - [ ] Registration API
   - [ ] Dashboard activity
+  - [ ] Dashboard API
