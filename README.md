@@ -8,7 +8,7 @@
   - [X] Login activity
   - [X] Login API
   - [X] Connection with API
-  - [ ] Registration activity
+  - [X] Registration activity
   - [ ] Registration API
   - [ ] Dashboard activity
   - [ ] Dashboard API
