@@ -5,5 +5,5 @@
   > If you want help me, you can to edit, I will be grateful :)
 
   - [X] Design developing
-  - [ ] Connection with API
+  - [X] Connection with API
   - [ ] Dashboard activity
