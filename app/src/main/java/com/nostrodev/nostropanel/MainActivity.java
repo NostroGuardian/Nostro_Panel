@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     }else {
-                        Toast toast = Toast.makeText(getApplicationContext(), "Неверный логин или пароль!", Toast.LENGTH_SHORT);
-                        toast.show();
+                        showToast("Неверный логин или пароль.");
                     }
                 }
             }catch (Exception e) {
@@ -82,4 +81,14 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
     }
+
+    public void showToast(final String text) {
+        this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
 }
