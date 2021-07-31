@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nostro Panel</string>
+    <string name="authHeader">Авторизация</string>
+    <string name="authDescription">Пожалуйста, войдите в систему Nostro Panel.</string>
+    <string name="authLogin">Логин</string>
+    <string name="authPass">Пароль</string>
+    <string name="authButton">Войти</string>
+</resources>
