@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                     .add("login", login)
                     .add("password", password)
                     .build();
-            //);
 
             Request request = new Request.Builder()
                     .url(urlLogin)
