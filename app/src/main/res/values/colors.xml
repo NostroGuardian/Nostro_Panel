@@ -13,4 +13,5 @@
     <color name="subTextColor">#b7b7b7</color>
     <color name="itemsBackgroundColor">#fafafa</color>
     <color name="secondColor">#30615d</color>
+    <color name="transparentColor">#03FFFFFF</color>
 </resources>

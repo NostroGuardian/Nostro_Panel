@@ -8,4 +8,5 @@
     <string name="authPass">Пароль</string>
     <string name="authButton">Войти</string>
     <string name="regButton">Зарегистрироваться</string>
+    <string name="dashHeader">Панель управления</string>
 </resources>
