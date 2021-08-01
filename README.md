@@ -10,5 +10,5 @@
   - [X] Connection with API
   - [X] Registration activity
   - [X] Registration API
-  - [ ] Dashboard activity
+  - [X] Dashboard activity
   - [ ] Dashboard API
