@@ -9,6 +9,6 @@
   - [X] Login API
   - [X] Connection with API
   - [X] Registration activity
-  - [ ] Registration API
+  - [X] Registration API
   - [ ] Dashboard activity
   - [ ] Dashboard API
