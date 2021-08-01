@@ -5,10 +5,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.nostrodev.nostropanel.adapter.ListItemAdapter;
 import com.nostrodev.nostropanel.model.ListItem;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +20,10 @@ public class Dashboadr extends AppCompatActivity {
 
     RecyclerView dashMenuRecycler;
     ListItemAdapter listItemAdapter;
+
+    //for test
+    TextView dashHeader;
+    //---
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +41,16 @@ public class Dashboadr extends AppCompatActivity {
         itemsList.add(new ListItem(8, "Developing", "Developing"));
         itemsList.add(new ListItem(9, "Developing", "Developing"));
 
-        setListItemRecycler(itemsList);
+        //for test
+        dashHeader = (TextView) findViewById(R.id.dashHeader);
+
+        try {
+            dashHeader.setText(getUptime());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //---
+
     }
 
     private void setListItemRecycler(List<ListItem> itemsList) {
@@ -44,6 +61,21 @@ public class Dashboadr extends AppCompatActivity {
         listItemAdapter = new ListItemAdapter(this, itemsList);
         dashMenuRecycler.setLayoutManager(layoutManager);
         dashMenuRecycler.setAdapter(listItemAdapter);
+
     }
+
+    //for test
+
+    public static String getUptime() throws Exception {
+        URL uptimeURL = new URL("https://nstrdv.ml/api/uptime.php");
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(uptimeURL.openStream()));
+
+        String inputLine;
+        while ((inputLine = bufferedReader.readLine()) != null);
+        bufferedReader.close();
+        return inputLine;
+    }
+
+    //---
 
 }
